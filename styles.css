@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    border: 3px solid bisque; 
+    padding: 6px;
+    border-radius: 75px;
+    letter-spacing: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th {
+    text-align: center;
+    padding: 4px;
+    color: solid navy;
+}
+
+th, td {
+    border: 4px solid gray;
+    border-radius: 13px;
+    background-color: solid lightgray;
+    border-collapse: collapse;
+}
+
+table {
+    border: 5px solid black;
+    border-radius: 11px;
+}
+td:hover a {
+    color: green;
+    transition: color 0.5s;
+    text-decoration: line-through;
+}
+
+a:visited {
+    color: red;
+}
+
+
+#the-warriors {
+    width: 450px;
+    height: auto;
+    border-radius: 34px;
+    transition: 0.2s;
+}
+
+#the-warriors:hover {
+    border: solid red;
+    
+}
+
+#kobe {
+    width:800px;
+    height: auto;
+    border-radius: 34px;
+    border: 5px solid transparent;
+}
+@keyframes flashBorder {
+    0% { border-color: purple; }
+    50% { border-color: gold; }
+    100% { border-color: purple; }
+}
+
+#kobe:hover {
+    animation: flashBorder 1s infinite
+}
+
+#skyrim {
+    width: auto;
+    height: 500px;
+    border-radius: 55px;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+#skyrim:hover {
+    cursor: cell;
+    border: solid cadetblue;
+}
+
+
