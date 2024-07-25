@@ -77,3 +77,29 @@ a:visited {
 }
 
 
+.call_button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aqua;
+    border: 3px;
+    border-radius: 45px;
+    font-size: 32px;
+    margin: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    animation: flashButton 3s infinite
+}
+
+@keyframes flashButton {
+    0% { background-color: #007BFF; }  /* Initial color */
+    50% { background-color: #FF4500; } /* Flashing color */
+    100% { background-color: #007BFF; } /* Return to initial color */
+}
+.call_button:hover{
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+div > button {
+    text-align: center;
+}
+
