@@ -103,3 +103,49 @@ div > button {
     text-align: center;
 }
 
+
+form {
+    font-size: 33px;
+    background-color: lightgray;
+    text-align:  center;
+    border: solid 12px;
+    border-radius: 45px;
+    margin: 12px;
+}
+
+form > p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+textarea {
+    height: 300px;
+    width: 50%;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 25px;
+    margin: 1%;
+}
+
+#slider {
+    margin: auto;
+    width:25%;
+    border: solid 12px;
+    background: #ddd;
+    transition: transform 0.2s ease;
+}
+
+#slider:hover{
+    transform: scale(1.09)
+}
+
+#feedback_button button {
+    font-size: 35px;
+    margin: 12px;
+    color: rgb(253, 0, 42);
+    transition: background-color 0.3s ease
+}
+
+#feedback_button button:hover{
+    cursor: pointer;
+}

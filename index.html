@@ -46,7 +46,7 @@
         <figure>
             <center>
                 <img  id="kobe" src="photos/KOBE-BRYANT-1.jpg" alt="Kob after winning 2010 finals">
-            <figcaption>Fig.2 Bean after completing a back2back title run in 2010</figcaption>
+            <figcaption>Fig.2 Kobe Bean Bryant after completing a back2back title run in 2010</figcaption>
             </center>
         </figure>
     </div>
@@ -72,5 +72,31 @@
         <button class="call_button">PLAY GAME</button>
     </div>
     
+
+    <h1>User FeedBack Form</h1>
+    <form>
+        <p>
+            PLEASE GIVE US YOUR HONEST FEEDBACK
+        </p>
+
+        <div id="feedback">
+            <textarea name="feedback" id="feedback" placeholder="Enter feedback here"></textarea>
+        </div>
+
+        <div id="suggestions">
+            <textarea name="suggestions" placeholder="Enter your suggestions"></textarea>
+        </div>
+        
+
+        <div id="slider">
+            <label for="rate">Overrall rate:</label>
+            <input type="range" name="rate" id="rate" min="0" max="10" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output for="rate" id="rateValue">5</output>
+        </div>
+        <div id="feedback_button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
 </body>
 </html>
