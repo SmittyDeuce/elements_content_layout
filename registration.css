@@ -4,6 +4,7 @@ header {
 
 }
 
+
 .main-container {
     background-color: rgb(93, 107, 121);
     border: solid 2px;
@@ -53,6 +54,7 @@ nav {
     margin: 0;
     list-style-type: none;
     padding-left: 0;
+    font-size: 33px;
 }
 
 .menu-list  li {
@@ -81,6 +83,7 @@ nav {
     text-decoration: none;
     transition: 0.2s ease;
     display: inline-block;
+    margin-left: 22px;
 }
 
 .menu-list li a:hover {
@@ -90,11 +93,11 @@ nav {
 
 table {
     border: solid 3px;
-    margin: 12px;
+    border-collapse: collapse;
     padding: 12px;
     font-size: 30px;
     text-align: center;
-    border-color: white;
+    margin: 0 auto;
 }
 
 table caption {
@@ -102,6 +105,7 @@ table caption {
     border: solid 2px;
     font-weight: bold;
     background-color: #ff94a4;
+    text-transform: uppercase;
 }
 
 table th {
@@ -109,6 +113,8 @@ table th {
     padding: 5px;
     background-color: #000;
     border-color: white;
+    color: white;
+    text-transform: uppercase;
 }
 
 table td {
@@ -129,3 +135,6 @@ table tr:nth-child(odd) {
     background-color:rgb(118, 137, 155); /* White for odd rows */
 }
 
+table tr:hover {
+    background-color: green; /* Light gray on hover for better visibility */
+}
