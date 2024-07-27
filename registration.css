@@ -1,10 +1,10 @@
+/* Header styling */
 header {
     text-align: center;
     font-size: 55px;
-
 }
 
-
+/* Main container styling */
 .main-container {
     background-color: rgb(93, 107, 121);
     border: solid 2px;
@@ -13,12 +13,14 @@ header {
     line-height: 0.6;
 }
 
+/* Label styling */
 label {
     font-size: 20px;
     font-weight: bold;
     color: black;
 }
 
+/* Input fields and button styling */
 input[type="text"],
 input[type="email"],
 input[type="password"], 
@@ -29,6 +31,7 @@ input[type="password"],
     transition: 0.2s ease;
 }
 
+/* Input fields hover effect */
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover {
@@ -36,17 +39,19 @@ input[type="password"]:hover {
     cursor: pointer;
 }
 
+/* Button hover effect */
 .main-container button:hover {
     transform: scale(1.21);
     box-shadow: 0px 4px 8px blue;
     cursor: pointer;
 }
 
+/* Navigation styling */
 nav {
     margin: 12px;
-
 }
 
+/* Menu list styling */
 .menu-list {
     padding: 0;
     border: 6px solid #000;
@@ -57,27 +62,29 @@ nav {
     font-size: 33px;
 }
 
-.menu-list  li {
+/* Menu list items styling */
+.menu-list li {
     position: relative;
     padding: 12px;
     border: solid 2px;
     border-top: none;
     padding-left: 20px;
-    
 }
 
+/* Icon before each menu item */
 .menu-list li::before {
-    content: "\f002"; /* Unicode for the bomb icon */
-    font-family: 'Font Awesome 6 Free'; /* Use the correct Font Awesome font */
-    font-weight: 900; /* Font weight for solid icons */
+    content: "\f002"; /* Font Awesome icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #000; /* Icon color */
-    font-size: 1.2em; /* Adjust icon size */
+    color: #000;
+    font-size: 1.2em;
 }
 
+/* Menu item links styling */
 .menu-list li a {
     color: salmon;
     text-decoration: none;
@@ -86,11 +93,12 @@ nav {
     margin-left: 22px;
 }
 
+/* Menu item hover effect */
 .menu-list li a:hover {
     transform: scale(1.03);
-
 }
 
+/* Table styling */
 table {
     border: solid 3px;
     border-collapse: collapse;
@@ -100,6 +108,7 @@ table {
     margin: 0 auto;
 }
 
+/* Table caption styling */
 table caption {
     padding: 13px;
     border: solid 2px;
@@ -108,6 +117,7 @@ table caption {
     text-transform: uppercase;
 }
 
+/* Table header cells styling */
 table th {
     border: solid 5px;
     padding: 5px;
@@ -117,24 +127,23 @@ table th {
     text-transform: uppercase;
 }
 
+/* Table data cells styling */
 table td {
     border: solid 6px;
     width: fit-content;
-    
-}
-
-table td,table th {
     padding: 12px;
 }
 
+/* Alternate row coloring */
 table tr:nth-child(even) {
     background-color: rgb(81, 95, 107); /* Light gray for even rows */
 }
 
 table tr:nth-child(odd) {
-    background-color:rgb(118, 137, 155); /* White for odd rows */
+    background-color: rgb(118, 137, 155); /* White for odd rows */
 }
 
+/* Row hover effect */
 table tr:hover {
     background-color: green; /* Light gray on hover for better visibility */
 }

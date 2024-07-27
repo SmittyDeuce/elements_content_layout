@@ -1,3 +1,4 @@
+/* Style for the main heading */
 h1 {
     text-align: center;
     border: 3px solid bisque; 
@@ -7,6 +8,7 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Styles for table headers and cells */
 th {
     text-align: center;
     padding: 4px;
@@ -24,6 +26,8 @@ table {
     border: 5px solid black;
     border-radius: 11px;
 }
+
+/* Style for link hover effect in the navigation table */
 td:hover a {
     color: green;
     transition: color 0.5s;
@@ -34,7 +38,7 @@ a:visited {
     color: red;
 }
 
-
+/* Styles for images in the gallery with hover effects */
 #the-warriors {
     width: 450px;
     height: auto;
@@ -44,15 +48,15 @@ a:visited {
 
 #the-warriors:hover {
     border: solid red;
-    
 }
 
 #kobe {
-    width:800px;
+    width: 800px;
     height: auto;
     border-radius: 34px;
     border: 5px solid transparent;
 }
+
 @keyframes flashBorder {
     0% { border-color: purple; }
     50% { border-color: gold; }
@@ -60,7 +64,7 @@ a:visited {
 }
 
 #kobe:hover {
-    animation: flashBorder 1s infinite
+    animation: flashBorder 1s infinite;
 }
 
 #skyrim {
@@ -76,7 +80,7 @@ a:visited {
     border: solid cadetblue;
 }
 
-
+/* Styles for the call-to-action buttons */
 .call_button {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: aqua;
@@ -87,7 +91,7 @@ a:visited {
     padding: 12px;
     cursor: pointer;
     transition: transform 0.2s ease;
-    animation: flashButton 3s infinite
+    animation: flashButton 3s infinite;
 }
 
 @keyframes flashButton {
@@ -95,19 +99,21 @@ a:visited {
     50% { background-color: #FF4500; } /* Flashing color */
     100% { background-color: #007BFF; } /* Return to initial color */
 }
-.call_button:hover{
+
+.call_button:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Style for buttons within divs for consistent layout */
 div > button {
     text-align: center;
 }
 
-
+/* Form styles for the feedback form */
 form {
     font-size: 33px;
     background-color: lightgray;
-    text-align:  center;
+    text-align: center;
     border: solid 12px;
     border-radius: 45px;
     margin: 12px;
@@ -118,6 +124,7 @@ form > p {
     text-decoration: underline;
 }
 
+/* Styles for text areas within the form */
 textarea {
     height: 300px;
     width: 50%;
@@ -127,25 +134,27 @@ textarea {
     margin: 1%;
 }
 
+/* Slider styling */
 #slider {
     margin: auto;
-    width:25%;
+    width: 25%;
     border: solid 12px;
     background: #ddd;
     transition: transform 0.2s ease;
 }
 
-#slider:hover{
-    transform: scale(1.09)
+#slider:hover {
+    transform: scale(1.09);
 }
 
+/* Styles for the submit button in the feedback form */
 #feedback_button button {
     font-size: 35px;
     margin: 12px;
     color: rgb(253, 0, 42);
-    transition: background-color 0.3s ease
+    transition: background-color 0.3s ease;
 }
 
-#feedback_button button:hover{
+#feedback_button button:hover {
     cursor: pointer;
 }
