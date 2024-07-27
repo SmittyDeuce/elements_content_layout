@@ -14,32 +14,76 @@ header {
 
 label {
     font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
 
 input[type="text"],
 input[type="email"],
-.main-container button,
-input[type="password"] {
+input[type="password"], 
+.main-container button {
     margin: 12px;
     border: solid rgb(163, 83, 99) 2px;
     font-size: 22px;
-    transition: 0.2 ease;
+    transition: 0.2s ease;
 }
 
-input[type="text"],
-input[type="email"],
-.main-container button ,
+input[type="text"]:hover,
+input[type="email"]:hover,
 input[type="password"]:hover {
+    box-shadow: 0px 4px 8px blue;
     cursor: pointer;
 }
 
 .main-container button:hover {
     transform: scale(1.21);
+    box-shadow: 0px 4px 8px blue;
+    cursor: pointer;
 }
 
-input[type="text"],
-input[type="email"],
-.main-container button ,
-input[type="password"] :hover {
-    box-shadow: 0px 4px 8px blue
+nav {
+    margin: 12px;
+
+}
+
+.menu-list {
+    padding: 0;
+    border: 6px solid #000;
+    width: fit-content;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-list  li {
+    position: relative;
+    padding: 12px;
+    border: solid 2px;
+    border-top: none;
+    padding-left: 20px;
+    
+}
+
+.menu-list li::before {
+    content: "\f002"; /* Unicode for the bomb icon */
+    font-family: 'Font Awesome 6 Free'; /* Use the correct Font Awesome font */
+    font-weight: 900; /* Font weight for solid icons */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000; /* Icon color */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.menu-list li a {
+    color: salmon;
+    text-decoration: none;
+    transition: 0.2s ease;
+    display: inline-block;
+}
+
+.menu-list li a:hover {
+    transform: scale(1.03);
+
 }
